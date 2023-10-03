@@ -10,7 +10,8 @@
   width: 500px;
   padding-left: 10px;
   background-color: rgba(235, 235, 235, 0.4);
-  border-top-right-radius: 10%;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
   border-top-left-radius: 10%;
   border: 0px;
   border-top: 2px;
