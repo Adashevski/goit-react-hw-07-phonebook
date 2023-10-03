@@ -1,24 +1,42 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from 'redux/store';
-import ContactForm from 'components/ContactForm/ContactForm';
-import ContactList from 'components/ContactList/ContactList';
-import Filter from 'components/Filter/Filter';
-
-import '../index.css';
-
+import { ContactForm } from './ContactForm/ContactForm';
+import { Filter } from './Filter/Filter';
+import { ContactList } from './ContactList/ContactList';
 export const App = () => {
   return (
-    <Provider store={store}>
-      <div style={{ maxWidth: '600px', padding: '0 20px', margin: '0 auto' }}>
-        <h1>Phonebook</h1>
-        <ContactForm />
-        <h2>Contacts</h2>
-        <Filter />
-        <ContactList />
-      </div>
-    </Provider>
+    <div
+      style={{
+        width: '700px',
+        margin: '0 auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: 25,
+        borderStyle: 'solid',
+        boxShadow: '8px 8px 12px 0px rgba(66, 68, 90, 1)',
+        backgroundColor: 'rgba(151, 122, 99, 0.75)',
+      }}
+    >
+      <h1
+        style={{
+          fontWeight: 500,
+          paddingTop: 20,
+          paddingBottom: 20,
+        }}
+      >
+        Phonebook
+      </h1>
+      <ContactForm />
+
+      <h2
+        style={{
+          fontWeight: 500,
+        }}
+      >
+        Contacts
+      </h2>
+      <Filter />
+      <ContactList />
+    </div>
   );
 };
-
-export default App;

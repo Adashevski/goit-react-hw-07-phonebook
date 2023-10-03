@@ -1,9 +1,9 @@
 .list {
   list-style: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
-}
-
-.item {
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 5px black;
 }

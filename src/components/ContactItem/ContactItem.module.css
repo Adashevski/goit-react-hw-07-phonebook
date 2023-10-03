@@ -1,17 +1,31 @@
-.item {
-  margin-bottom: 10px;
-}
-
 .name {
   margin-right: 10px;
 }
 
+.item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 500px;
+  padding-left: 10px;
+  background-color: rgba(235, 235, 235, 0.4);
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border: 0px;
+  border-top: 2px;
+  border-style: solid;
+}
 .button {
-  margin-left: 10px;
-  padding: 5px 10px;
-  background-color: #f44336;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
   cursor: pointer;
+  width: 80px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(212, 23, 23);
+  box-shadow: 8px 8px 12px 0px rgba(66, 68, 90, 1);
+  margin-left: 20px;
+}
+.button:hover {
+  background-color: rgb(255, 0, 0);
 }
